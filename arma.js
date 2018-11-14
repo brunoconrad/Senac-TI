@@ -11,7 +11,7 @@ var arma = /** @class */ (function () {
             console.log('Não tem munição');
         }
         else {
-            this.projeteisNoPente -= N;
+            this.projeteisNoPente -= N; 
             for (var x = 1; x <= N; x++) {
                 console.log('Pistola diz: paaa');
             }
