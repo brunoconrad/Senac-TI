@@ -12,7 +12,7 @@ var arma = /** @class */ (function () {
         }
         else {
             this.projeteisNoPente -= N;
-            for (var x = 1; x <= N; x++) {
+            for (var x = 1; x <= N; x++) { 
                 console.log('Pistola diz: paaa');
             }
             if (this.informarBalas() > 0) {

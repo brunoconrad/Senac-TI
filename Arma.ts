@@ -1,7 +1,4 @@
 export class arma{
-    private calibre: string
-    private marca: string
-    private tipo: string
     protected capacidade: number
     protected projeteisNoPente: number
 
