@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var paciente_1 = require("./paciente");
+var medico_1 = require("./medico");
+var operador_1 = require("./operador");
+var logarPaciente = new paciente_1.paciente(123, 'paciente', '');
+logarPaciente.logar();
+var logarMedico = new medico_1.medico(123, 'medico');
+logarMedico.logar();
+var logarOperador = new operador_1.operador(123, 'operador');
+logarOperador.logar();
+var data = new paciente_1.paciente(123, 'paciente', '12/12/2018');
+data.Consulta();
