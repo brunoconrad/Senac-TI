@@ -12,5 +12,6 @@ logarMedico.logar()
 let logarOperador = new operador(123, 'operador')
 logarOperador.logar()
 
+
 let data = new paciente(123, 'paciente', '12/12/2018')
 data.Consulta()

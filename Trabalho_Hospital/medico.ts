@@ -12,4 +12,5 @@ export class medico extends pessoa{
             console.log('errrooooooouuuuu, medico')
         }
     }
+    
 }
