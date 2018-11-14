@@ -16,7 +16,7 @@ class paciente extends pessoa_1.pessoa {
         else {
             console.log('errrooooooouuuuu, paciente');
         }
-    }
+    } 
     Consulta() {
         if (this.dataConsultaPaciente == this.dataConsultaPaciente) {
             console.log('Sua consulta é hoje');

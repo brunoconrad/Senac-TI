@@ -16,4 +16,4 @@ class operador extends pessoa_1.pessoa {
         }
     }
 }
-exports.operador = operador;
+exports.operador = operador; 

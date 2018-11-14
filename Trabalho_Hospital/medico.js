@@ -16,4 +16,4 @@ class medico extends pessoa_1.pessoa {
         }
     }
 }
-exports.medico = medico;
+exports.medico = medico; 

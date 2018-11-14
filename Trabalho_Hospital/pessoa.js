@@ -6,4 +6,4 @@ class pessoa {
         this.senha = senha;
     }
 }
-exports.pessoa = pessoa;
+exports.pessoa = pessoa; 

@@ -10,4 +10,4 @@ logarMedico.logar();
 let logarOperador = new operador_1.operador(123, 'operador');
 logarOperador.logar();
 let data = new paciente_1.paciente(123, 'paciente', '12/12/2018');
-data.Consulta();
+data.Consulta(); 
