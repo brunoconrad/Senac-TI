@@ -1,15 +1,16 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class zoo {
-    constructor(end, list) {
+exports.__esModule = true;
+var zoo = /** @class */ (function () {
+    function zoo(end, list) {
         this.endereco = end;
         this.listaDeAnimais = list;
     }
-    mostrarEndereco() {
+    zoo.prototype.mostrarEndereco = function () {
         return this.endereco;
-    }
-    mostrarListaAnimais() {
+    };
+    zoo.prototype.mostrarListaAnimais = function () {
         return this.listaDeAnimais;
-    }
-}
+    };
+    return zoo;
+}());
 exports.zoo = zoo;
