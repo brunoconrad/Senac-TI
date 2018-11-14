@@ -15,5 +15,5 @@ export class zoo{
 
     public mostrarListaAnimais(): Array<animal>{
         return this.listaDeAnimais
-    } 
+    }  
 }
