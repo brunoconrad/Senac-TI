@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; 
 exports.__esModule = true;
 var animal = /** @class */ (function () {
     //constructor da minha classe

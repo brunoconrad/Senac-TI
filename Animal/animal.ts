@@ -1,4 +1,4 @@
-export class animal{
+export class animal{ 
 
     private quantidadeDeDentes: number
     private quantidadeDeOlhos: number
