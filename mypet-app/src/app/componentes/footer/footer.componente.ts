@@ -7,5 +7,13 @@ import { Component } from '@angular/core'
 })
 
 export class FooterComponente {
-    
+
+    public n1:string
+    public n2:string
+
+    exibirValor(valor: Event): void{
+     
+     this.n1 = (<HTMLInputElement>valor.target).value
+     this.n2 = this.n1
+    }
 }
