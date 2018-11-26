@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
     // selector é nome para o componente
@@ -7,7 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class DireitoComponente implements OnInit{
-    @Input() public Numero_N: number = 4
+    @Output() public definirTexto:EventEmitter<string> = new EventEmitter()
+
+    
     constructor(){}
 
     ngOnInit(){
