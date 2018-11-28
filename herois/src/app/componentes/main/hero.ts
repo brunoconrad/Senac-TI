@@ -6,6 +6,4 @@ export class Hero {
             this.idHeroi = id
             this.nomeHeroi = name
       }
-
-      
   }
