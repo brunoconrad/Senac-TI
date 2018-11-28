@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class EsquerdoComponente implements OnInit{
-    @Input() public Numero: number =0
+    @Input() public Numero: number
     constructor(){
        
      }
