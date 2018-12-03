@@ -1,5 +1,5 @@
 import { Component, OnInit , Input} from '@angular/core'
-
+import {Pessoa} from './../pessoa.model'
 
 @Component({
     // selector é nome para o componente
@@ -8,22 +8,33 @@ import { Component, OnInit , Input} from '@angular/core'
 })
 
 export class MainComponente implements OnInit{
-    //Variável interna da classe main
-  public Texto: string
-  public TextoNoMain: string = ''
+  public pessoa = new Pessoa()
+  public pessoas : Pessoa[] = []
+  public numeroArray: Number = 0
 
-  public textoNoMain(tipo: string): void{
-    this.TextoNoMain=tipo
+  constructor() { 
+    this.limparAtributos()
   }
-
-  @Input() public Numero: number
-  
-
-
-
-
-  constructor() { }
 
   ngOnInit() {
   }
+
+  enviarCadastro(){
+    this.pessoas.push(this.pessoa)
+    this.numeroArray = this.pessoas.length
+    this.pessoa = new Pessoa()  
+    this.limparAtributos()
+    
+  }
+  definirNome(texto): void{
+    this.pessoa.Nome = ((<HTMLInputElement>texto.target).value)
+  }
+  definirSobrenome(texto): void{
+    this.pessoa.Sobrenome = ((<HTMLInputElement>texto.target).value)
+  }
+  limparAtributos(): void{
+    this.pessoa.Nome = ''
+    this.pessoa.Sobrenome = ''
+
+}
 }
