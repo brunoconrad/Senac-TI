@@ -1,0 +1,15 @@
+<table border="1">
+    <tr>
+      <th>ID</th>
+      <th>NOME</th>
+      <th>VALOR</th>
+      <th>DESCRIÇÃO</th>
+    </tr>
+  <tr *ngFor="let celular of celulares">
+    <td>{{celular.id}}</td>
+    <td>{{celular.nome}}</td>
+    <td>{{celular.valor}}</td>
+    <td><a [routerLink]="['/celular', celular.id]">Exibir Descrição</a></td>
+  </tr> 
+  
+  </table>

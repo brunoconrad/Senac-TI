@@ -1,0 +1,15 @@
+<table border="1">
+    <tr>
+      <th>ID</th>
+      <th>NOME</th>
+      <th>VALOR</th>
+      <th>DESCRIÇÃO</th>
+    </tr>
+  <tr *ngFor="let computador of computadores">
+    <td>{{computador.id}}</td>
+    <td>{{computador.nome}}</td>
+    <td>{{computador.valor}}</td>
+    <td><a [routerLink]="['/computador', computador.id]">Exibir Descrição</a></td>
+  </tr> 
+  
+  </table>

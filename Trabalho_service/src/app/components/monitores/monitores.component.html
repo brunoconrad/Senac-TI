@@ -1,0 +1,15 @@
+<table border="1">
+    <tr>
+      <th>ID</th>
+      <th>NOME</th>
+      <th>VALOR</th>
+      <th>DESCRIÇÃO</th>
+    </tr>
+  <tr *ngFor="let monitor of monitores">
+    <td>{{monitor.id}}</td>
+    <td>{{monitor.nome}}</td>
+    <td>{{monitor.valor}}</td>
+    <td><a [routerLink]="['/monitor', monitor.id]">Exibir Descrição</a></td>
+  </tr> 
+  
+  </table>
