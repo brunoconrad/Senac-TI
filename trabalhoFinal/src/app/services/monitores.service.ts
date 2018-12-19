@@ -44,7 +44,13 @@ import { Http } from '@angular/http'
 
 public getProdutosPromise(): Promise<Monitor[]>{
   return new Promise((resolve, reject) =>{  
-      resolve(this.monitores)
+      
+      let funciona = true
+      if(funciona){
+        resolve(this.monitores)
+      }else
+      reject({tipo_erro: 'produto falso', mensagem: 'produto pirata'})
+        
   })
 }
 

@@ -44,7 +44,12 @@ import { Injectable } from '@angular/core'
     
     public getProdutosPromise(): Promise<Computador[]>{
       return new Promise((resolve, reject) =>{  
+          let funciona = true
+        if(funciona){
           resolve(this.computadores)
+        }else
+        reject({tipo_erro: 'produto falso', mensagem: 'produto pirata'})
+          
       })
     }
 

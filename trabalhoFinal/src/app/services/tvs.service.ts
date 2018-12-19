@@ -42,7 +42,13 @@ import { Http } from '@angular/http'
 
     public getProdutosPromise(): Promise<Tv[]>{
       return new Promise((resolve, reject) =>{  
+          
+        let funciona = true
+        if(funciona){
           resolve(this.produtos)
+        }else
+        reject({tipo_erro: 'produto falso', mensagem: 'produto pirata'})
+          
       })
     }
 
