@@ -3,4 +3,5 @@ export class Computador{
     public nome
     public descricao
     public valor
+    public img
 }

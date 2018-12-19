@@ -19,7 +19,10 @@ export class CelularComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.celular = this.celularesService.getCelularPorId(this.route.snapshot.params['id'])
+    this.celularesService.getProdutoPorIdAPI(this.route.snapshot.params['id']).then((prod: Celular)=>{
+      console.log(prod)
+      this.celular = prod[0]
+    })
   }
 
 }

@@ -3,4 +3,5 @@ export class Celular{
     public nome
     public descricao
     public valor
+    public img
 }

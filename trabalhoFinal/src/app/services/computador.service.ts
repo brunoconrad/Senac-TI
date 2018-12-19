@@ -1,47 +1,59 @@
 import { Computador } from '../models/computador.model'
+import { Http } from '@angular/http'
+import { Injectable } from '@angular/core'
 
 
+@Injectable() export class ComputadoresService {
 
-export class ComputadoresService {
+  constructor(private http:Http){
+
+  }
 
     public computadores: Computador[] =
 [
   {
    id: 1,
-   nome: 'Dell Inspiron INS-3470-M20M',
-   descricao: 'Computador Dell Inspiron INS-3470-M20M 8ª Geração Intel Core i3 4GB 1TB Windows 10 Monitor 21,5"',
-   valor: 'R$ 3.109,00'  
+   nome: '',
+   descricao: '',
+   valor: '', 
+   img: ''
   },   
   {
     id: 2,
-    nome: 'EasyPC Desktop',
-    descricao: 'Computador EasyPC Desktop Intel Core i3 4GB DDR3 HD 1TB HDMI Áudio 5.1 Monitor LG LED 19.5',
-    valor: 'R$ 5.499,99'  
+    nome: '',
+    descricao: '',
+    valor: '', 
+    img: '' 
   },
   {
     id: 3,
-    nome: 'Pichau Gamer RTB Osíris',
-    descricao: 'Computador Pichau Gamer RTB Osíris, i5-7500,GeForce GTX 1070 8GB Gigabyte Windforce OC, Ram 8Gb, HD 1Tb, 500W, Spec-Alpha',
-    valor: 'R$4.431,75'  
+    nome: '',
+    descricao: '',
+    valor: '', 
+    img: ''  
   },
   {
     id: 4,
-    nome: 'Pichau Gamer RTB',
-    descricao: 'Computador Pichau Gamer RTB, i5-8400, GeForce GTX 1060 6GB Galax OC, 8GB DDR4, HD 1TB, 500w, Rostock RGB',
-    valor: 'R$4.319,04'  
+    nome: '',
+    descricao: '',
+    valor: '', 
+    img: ''  
   }
 ]
 
-    public getComputadores(): Array<Computador> {
-        return this.computadores
-    }
     
-    public getComputadorPorId(id: number): 
-    Computador{
-        let computadoresInternos: Computador[]
-        computadoresInternos =
-         this.getComputadores()
-        return computadoresInternos[id -1]
+    public getProdutosPromise(): Promise<Computador[]>{
+      return new Promise((resolve, reject) =>{  
+          resolve(this.computadores)
+      })
+    }
+
+    public getProdutosPromiseAPI(): Promise<Computador>{
+      return this.http.get('http://localhost:3000/computadores').toPromise().then((pc:any)=> pc.json())
+    }
+  
+    public getProdutoPorIdAPI(id: number): Promise<Computador>{
+      return this.http.get(`http://localhost:3000/computadores?id=${id}`).toPromise().then((pc: any)=>pc.json())
     }
 
 }

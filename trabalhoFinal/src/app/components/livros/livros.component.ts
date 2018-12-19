@@ -15,7 +15,10 @@ export class LivrosComponent implements OnInit {
   constructor(private livrosService: LivrosService) { }
 
   ngOnInit() {
-    this.livros = this.livrosService.getLivros()
+    this.livrosService.getProdutosPromiseAPI().then((liv: Livro[]) =>{
+      this.livros = liv
+    },
+    (erro:any) => {console.log(erro)})
   }
 
 }

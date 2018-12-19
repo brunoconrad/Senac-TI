@@ -19,7 +19,10 @@ export class LivroComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.livro = this.livrosService.getLivrosPorId(this.route.snapshot.params['id'])
+    this.livrosService.getProdutoPorIdAPI(this.route.snapshot.params['id']).then((liv: Livro) => {
+      console.log(liv)
+      this.livro = liv[0]
+    })
   }
 
 }

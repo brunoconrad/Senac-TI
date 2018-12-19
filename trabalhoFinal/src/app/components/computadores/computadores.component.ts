@@ -15,7 +15,10 @@ export class ComputadoresComponent implements OnInit {
   constructor(private celularesService: ComputadoresService) { }
 
   ngOnInit() {
-    this.computadores = this.celularesService.getComputadores()
+    this.celularesService.getProdutosPromiseAPI().then((pc: Computador[]) => {
+      this.computadores = pc
+    },
+    (erro:any) => {console.log(erro)})
   }
 
 }

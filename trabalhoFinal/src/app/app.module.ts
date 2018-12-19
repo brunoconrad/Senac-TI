@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component';
-import { ProdutosComponent } from './components/produtos/produtos.component';
-import { ProdutoComponent } from './components/produtos/produto/produto.component';
+import { TvsComponent } from './components/tvs/tvs.component';
+import { TvComponent } from './components/tvs/tv/tv.component';
 import { RouterModule } from '@angular/router';
 import { RotaDinamica } from './app.route';
 
@@ -20,11 +20,16 @@ import { LivrosComponent } from './components/livros/livros.component'
 import { MonitorComponent } from './components/monitores/monitor/monitor.component'
 import { MonitoresComponent } from './components/monitores/monitores.component'
 
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './navbar/navbar.component'
+
+
 @NgModule({
   declarations: [
+    HomeComponent,
     AppComponent,
-    ProdutosComponent,
-    ProdutoComponent,
+    TvsComponent,
+    TvComponent,
     CelularesComponent,
     CelularComponent,
     ComputadoresComponent,
@@ -32,7 +37,8 @@ import { MonitoresComponent } from './components/monitores/monitores.component'
     LivroComponent,
     LivrosComponent,
     MonitorComponent,
-    MonitoresComponent
+    MonitoresComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

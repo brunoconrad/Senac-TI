@@ -1,64 +1,157 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" },
-    "produtos": [
+    "tvs": [
       {
-        "id": "1",
-        "nome": "xxxxxxxxxxxx J7",
-        "descricao": "Smartphone Samsung Galaxy J7 Pro Android 7.0 Tela 5.5 Octa-Core 64GB 4G Wi-Fi Câmera 13MP - Preto",
-        "valor": "R$ 1.198,00"
+        "id": 1,
+        "nome": "Samsung 55as Ultra HD 4k",
+        "descricao": "Smart TV LED 55 Samsung Ultra HD 4k 55NU7100 com Conversor Digital 3 HDMI 2 USB Wi-Fi Solução Inteligente de Cabos HDR Premium Smart Tizen",
+        "valor": "R$ 3.099,99", 
+        "img": "assets/tvs/tv1.png"  
       },
       {
-        "id": "2",
-        "nome": "Notebook",
-        "descricao": "Notebook Essentials E20 Intel Celeron Dual Core 4GB 500GB LED HD 15,6 W10 Cinza Titânio - Samsung",
-        "valor": "R$ 1.377,49"
+        "id": 2,
+        "nome": "Samsung 49 Ultra HD 4k",
+        "descricao": "Smart TV LED 49 Samsung Ultra HD 4k 49NU7100 com Conversor Digital 3 HDMI 2 USB Wi-Fi Solução Inteligente de Cabos HDR Premium Smart Tizen",
+        "valor": "R$ 2.399,99",
+        "img": "assets/tvs/tv2.png"
       },
       {
-        "id": "3",
-        "nome": "Smart TV LED 32",
-        "descricao": "Smart TV LED 32 Samsung 32J4290 HD com Conversor Digital 2 HDMI 1 USB Wi-Fi 60Hz - Preta",
-        "valor": "R$ 899,99"
+        "id": 3,
+        "nome": "Smart TV LED 43",
+        "descricao": "Smart TV LED 43 Samsung 43J5290 Full HD com Conversor Digital 2 HDMI 1 USB Wi-Fi Screen Mirroring + Web Browser - Preta",
+        "valor": "R$ 1.599,99",
+        "img": "assets/tvs/tv3.png"
       }, 
       {
-        "id": "4",
-        "nome": "Lavadora de Roupas",
-        "descricao": "Lavadora de Roupas Electrolux 16kg LAC16 - Branca",
-        "valor": "R$ 1.579,99"  
+        "id": 4,
+        "nome": "Smart TV LED 32",
+        "descricao": "Smart TV LED 32 Samsung 32J4290 HD com Conversor Digital 2 HDMI 1 USB Wi-Fi 60Hz - Preta",
+        "valor": "R$ 999,99",
+        "img": "assets/tvs/tv4.png"
       },
     {}
     ],
-    "computadores": [
+    "celulares":[
       {
-        "id": "1",
-        "nome": "xxxxxxxxxxxx J7",
+        "id": 1,
+        "nome": "Galaxy J7",
         "descricao": "Smartphone Samsung Galaxy J7 Pro Android 7.0 Tela 5.5 Octa-Core 64GB 4G Wi-Fi Câmera 13MP - Preto",
-        "valor": "R$ 1.198,00"
+        "valor": "R$ 1.198,00", 
+        "img": "assets/celulares/j7.png"  
       },
       {
-        "id": "2",
-        "nome": "Notebook",
-        "descricao": "Notebook Essentials E20 Intel Celeron Dual Core 4GB 500GB LED HD 15,6 W10 Cinza Titânio - Samsung",
-        "valor": "R$ 1.377,49"
+        "id": 2,
+        "nome": "iPhone Xr",
+        "descricao": "iPhone Xr 128GB Preto IOS12 4G + Wi-fi Câmera 12MP - Apple",
+        "valor": "R$ 5.499,99",
+        "img": "assets/celulares/iphoneXr.jpg"
       },
       {
-        "id": "3",
-        "nome": "Smart TV LED 32",
-        "descricao": "Smart TV LED 32 Samsung 32J4290 HD com Conversor Digital 2 HDMI 1 USB Wi-Fi 60Hz - Preta",
-        "valor": "R$ 899,99"
+        "id": 3,
+        "nome": "Galaxy S9",
+        "descricao": "Smartphone Samsung Galaxy S9 Dual Chip Android 8.0 Tela 5.8 Octa-Core 2.8GHz 128GB 4G Câmera 12MP - Preto",
+        "valor": "R$ 2.999,00",
+        "img": "assets/celulares/s9.png"
       }, 
       {
-        "id": "4",
-        "nome": "Lavadora de Roupas",
-        "descricao": "Lavadora de Roupas Electrolux 16kg LAC16 - Branca",
-        "valor": "R$ 1.579,99"  
+        "id": 4,
+        "nome": "Asus Zenfone 5",
+        "descricao": "Smartphone Asus Zenfone 5 64GB Dual Chip Android Oreo Tela 6.2 Snapdragon 636 Octacore 4G Câmera 12MP + 8MP (Dual Traseira) 3300mAh - Preto",
+        "valor": "R$ 2.199,00",
+        "img": "assets/celulares/zenfone5.jpg"
       },
-      
+    {}
+    ],
+    "computadores":[
+      {
+        "id": 1,
+        "nome": "Inspiron INS-3470-M20M",
+        "descricao": "Computador Dell Inspiron INS-3470-M20M 8ª Geração Intel Core i3 4GB 1TB Windows 10 Monitor 21,5",
+        "valor": "R$ 3.109,00", 
+        "img": "assets/computadores/Inspiron.jpg"  
+      },
+      {
+        "id": 2,
+        "nome": "EasyPC Desktop",
+        "descricao": "Computador EasyPC Standard Intel Core i5 8GB DDR3 HD 1TB HDMI FullHD audio 5.1 Monitor 19.5",
+        "valor": "R$ 1.729,00",
+        "img": "assets/computadores/easypc.jpg"
+      },
+      {
+        "id": 3,
+        "nome": "Pichau Gamer RTB Osíris",
+        "descricao": "Computador Pichau Gamer RTB Osíris, i5-7500,GeForce GTX 1070 8GB Gigabyte Windforce OC, Ram 8Gb, HD 1Tb, 500W, Spec-Alpha",
+        "valor": "R$4.431,75",
+        "img": "assets/computadores/gamer.jpg"
+      }, 
+      {
+        "id": 4,
+        "nome": "Pichau Gamer RTB",
+        "descricao": "Computador Pichau Gamer RTB, i5-8400, GeForce GTX 1060 6GB Galax OC, 8GB DDR4, HD 1TB, 500w, Rostock RGB",
+        "valor": "R$4.319,04",
+        "img": "assets/computadores/gamer2.jpg"
+      },
+    {}
+    ],
+    "livros":[
+      {
+        "id": 1,
+        "nome": "Programação C/C++",
+        "descricao": "Esta série foi criada para atender aos eixos tecnológicos que orientamos cursos técnicos e profissionalizantes em âmbito nacional. Seu objetivo é capacitar o aluno para o mercado de trabalho, fornecendo, além de fundamentos teóricos, aspectos práticos que geram uma perspectiva de inserção no setor produtivo e, até mesmo, de requalificação. O conteúdo pode ser entendido a cursos de Formação Inicial e Continuada (FIC), pois o material é agradável e moderno; o aprendizado, gradativo e didático. Está adequado às áreas de conhecimento e aos componentes curriculares – com exemplos e exercícios de fixação – e é proporcional às grades horárias das principais instituições de ensino, portanto o professor pode utilizá-lo como livro-texto em sala de aula. ",
+        "valor": "R$ 51,90", 
+        "img": "assets/livros/program_c.png"  
+      },
+      {
+        "id": 2,
+        "nome": "Algoritimos - 2ª Ed",
+        "descricao": "Com uma linguagem simples e didática, o livro procura tornar a lógica de programação prática, além de mostrar aos estudantes um caminho mais adequado na construção dos algoritmos. A abstração de procedimentos e dados é um dos maiores problemas para os estudantes nos cursos introdutórios, e, para tentar escapar das dificuldades, os autores utilizam uma arquitetura de computador simples. Um dos principais objetivos do livro é fazer com que o estudante consiga no futuro relacionar os aspectos abstratos da computação com sua implementação, e ainda incentivar a necessidade de escrever os algoritmos antes de sua implementação propriamente dita. ",
+        "valor": "R$ 70,90",
+        "img": "assets/livros/algoritmos.jpg"
+      },
+      {
+        "id": 3,
+        "nome": "Profissional Em Html 5",
+        "descricao": "Para aqueles que têm navegado pela internet, ou talvez estejam até desenvolvendo para ela há dez anos ou mais, considere o quanto a tecnologia HTML já caminhou, apenas nos últimos anos. Os autores deste livro trabalham, desenvolvem e ensinam tecnologias HTML5 e podem dizer, com certeza, que a adoção dos novos padrões está acelerando incrivelmente. O desenvolvimento de HTML5 não mostra sinais de estar diminuindo, e será muito interessante observá-lo. Com este livro, temos como objetivo liberar o poder do HTML5. Se você é um desenvolvedor web que quer ampliar seus horizontes e fazer suas aplicações web se destacarem, a hora do HTML5 é agora! HTML5 está aqui e com ele, as aplicações web podem obter um poder, escalabilidade e capacidade de resposta sem precedentes. Neste livro, você aprenderá como desbloquear esse poder e usar a tecnologia HTML5 mais recente para criar aplicações web modernas, que usem todo o potencial dos navegadores também modernos. ",
+        "valor": "R$ 42,90",
+        "img": "assets/livros/html5.jpg"
+      }, 
+      {
+        "id": 4,
+        "nome": "Programação Web Java",
+        "descricao": "Esta série foi criada para atender aos eixos tecnológicos que orientamos cursos técnicos e profissionalizantes em âmbito nacional. Seu objetivo é capacitar o aluno para o mercado de trabalho, fornecendo, além de fundamentos teóricos, aspectos práticos que geram uma perspectiva de inserção no setor produtivo e, até mesmo, de requalificação. O conteúdo pode ser estendido a cursos de Formação Inicial e Continuada (FIC), pois o material é agradável e moderno; o aprendizado, gradativo e didático. Está adequado às áreas de conhecimento e aos componentes curriculares – com exemplos e exercícios de fixação – e é proporcional às grades horárias das principais instituições de ensino, portanto o professor pode utilizá-lo como livro-texto em sala de aula. ",
+        "valor": "R$ 62,00",
+        "img": "assets/livros/webjava.png"
+      },
+    {}
+    ],
+    "monitores":[
+      {
+        "id": 1,
+        "nome": "Samsung Curvo 24",
+        "descricao": "Monitor Gamer Samsung Curvo 24 QLED 144Hz 1ms, LC24FG73FQLXZD",
+        "valor": "R$1.930,70", 
+        "img": "assets/monitores/m1.jpg"  
+      },
+      {
+        "id": 2,
+        "nome": "Monitor AOC",
+        "descricao": "Monitor AOC B1 Series 21.5 60Hz 5ms FlickerFree Led Widescreen, 22B1H",
+        "valor": "R$585,11",
+        "img": "assets/monitores/m2.jpg"
+      },
+      {
+        "id": 3,
+        "nome": "Monitor Asus",
+        "descricao": "Monitor Asus 23.6 75Hz 1ms VP247QG",
+        "valor": "R$1.078,40",
+        "img": "assets/monitores/m3.jpg"
+      }, 
+      {
+        "id": 4,
+        "nome": "Monitor AOC",
+        "descricao": "Monitor AOC 23.6 Pol. LED Widescreen Preto, M2470SWD2",
+        "valor": "R$723,88",
+        "img": "assets/monitores/m4.jpg"
+      },
     {}
     ]
   }

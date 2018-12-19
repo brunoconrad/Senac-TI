@@ -1,15 +1,9 @@
-<table border="1">
-    <tr>
-      <th>ID</th>
-      <th>NOME</th>
-      <th>VALOR</th>
-      <th>DESCRIÇÃO</th>
-    </tr>
-  <tr *ngFor="let monitor of monitores">
-    <td>{{monitor.id}}</td>
-    <td>{{monitor.nome}}</td>
-    <td>{{monitor.valor}}</td>
-    <td><a [routerLink]="['/monitor', monitor.id]">Exibir Descrição</a></td>
-  </tr> 
-  
-  </table>
+    
+  <div class="card text-center separar" style="width: 18rem; float:left;" *ngFor="let  monitor of monitores">
+      <img class="card-img-top" [src]="monitor.img"  alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{monitor.nome}}</h5>
+        <p class="card-text"><strong>{{monitor.valor}}</strong></p>
+        <a class="btn btn-primary" [routerLink]="['/monitor', monitor.id]">Ver Descrição</a>
+      </div>
+    </div>

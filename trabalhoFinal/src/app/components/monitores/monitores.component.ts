@@ -15,7 +15,10 @@ export class MonitoresComponent implements OnInit {
   constructor(private monitoresService: MonitoresService) { }
 
   ngOnInit() {
-    this.monitores = this.monitoresService.getMonitores()
+    this.monitoresService.getProdutosPromiseAPI().then(( moni: Monitor[]) => {
+      this.monitores = moni
+    },
+    (erro:any) => {console.log(erro)})
   }
 
 }

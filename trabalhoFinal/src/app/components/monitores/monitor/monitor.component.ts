@@ -19,7 +19,10 @@ export class MonitorComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.monitor = this.monitoresService.getMonitoresPorId(this.route.snapshot.params['id'])
+    this.monitoresService.getProdutoPorIdAPI(this.route.snapshot.params['id']).then((moni: Monitor)=>{
+      console.log(moni)
+      this.monitor = moni[0]
+    })
   }
 
 }

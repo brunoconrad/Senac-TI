@@ -15,7 +15,9 @@ export class CelularesComponent implements OnInit {
   constructor(private celularesService: CelularesService) { }
 
   ngOnInit() {
-    this.celulares = this.celularesService.getCelulares()
+    this.celularesService.getProdutosPromiseAPI().then((cel: Celular[]) => {
+      this.celulares = cel
+  },
+     (erro:any) => {console.log(erro)})
   }
-
 }

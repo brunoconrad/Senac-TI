@@ -3,4 +3,5 @@ export class Monitor{
     public nome
     public descricao
     public valor
+    public img
 }

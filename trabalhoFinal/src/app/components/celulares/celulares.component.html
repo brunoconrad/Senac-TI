@@ -1,15 +1,9 @@
-<table border="1">
-    <tr>
-      <th>ID</th>
-      <th>NOME</th>
-      <th>VALOR</th>
-      <th>DESCRIÇÃO</th>
-    </tr>
-  <tr *ngFor="let celular of celulares">
-    <td>{{celular.id}}</td>
-    <td>{{celular.nome}}</td>
-    <td>{{celular.valor}}</td>
-    <td><a [routerLink]="['/celular', celular.id]">Exibir Descrição</a></td>
-  </tr> 
-  
-  </table>
+
+  <div class="card text-center separar" style="width: 18rem; float:left;" *ngFor="let celular of celulares">
+      <img class="card-img-top" [src]="celular.img"  alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{celular.nome}}</h5>
+        <p class="card-text"><strong>{{celular.valor}}</strong></p>
+        <a class="btn btn-primary" [routerLink]="['/celular', celular.id]">Ver Descrição</a>
+      </div>
+    </div>

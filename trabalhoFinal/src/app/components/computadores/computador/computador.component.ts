@@ -19,7 +19,10 @@ export class ComputadorComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.computador = this.computadoresService.getComputadorPorId(this.route.snapshot.params['id'])
+    this.computadoresService.getProdutoPorIdAPI(this.route.snapshot.params['id']).then((pc: Computador) => {
+      console.log(pc)
+      this.computador = pc[0]
+    })
   }
 
 }

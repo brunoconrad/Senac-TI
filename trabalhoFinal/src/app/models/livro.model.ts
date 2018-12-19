@@ -3,4 +3,5 @@ export class Livro{
     public nome
     public descricao
     public valor
+    public img
 }

@@ -1,15 +1,9 @@
-<table border="1">
-    <tr>
-      <th>ID</th>
-      <th>NOME</th>
-      <th>VALOR</th>
-      <th>DESCRIÇÃO</th>
-    </tr>
-  <tr *ngFor="let livro of livros">
-    <td>{{livro.id}}</td>
-    <td>{{livro.nome}}</td>
-    <td>{{livro.valor}}</td>
-    <td><a [routerLink]="['/livro', livro.id]">Exibir Descrição</a></td>
-  </tr> 
   
-  </table>
+  <div class="card text-center separar" style="width: 18rem; float:left;" *ngFor="let  livro of livros">
+      <img class="card-img-top" [src]="livro.img"  alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{livro.nome}}</h5>
+        <p class="card-text"><strong>{{livro.valor}}</strong></p>
+        <a class="btn btn-primary" [routerLink]="['/livro', livro.id]">Ver Descrição</a>
+      </div>
+    </div>

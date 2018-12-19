@@ -1,15 +1,9 @@
-<table border="1">
-    <tr>
-      <th>ID</th>
-      <th>NOME</th>
-      <th>VALOR</th>
-      <th>DESCRIÇÃO</th>
-    </tr>
-  <tr *ngFor="let computador of computadores">
-    <td>{{computador.id}}</td>
-    <td>{{computador.nome}}</td>
-    <td>{{computador.valor}}</td>
-    <td><a [routerLink]="['/computador', computador.id]">Exibir Descrição</a></td>
-  </tr> 
   
-  </table>
+  <div class="card text-center separar" style="width: 18rem; float:left;" *ngFor="let computador of computadores">
+      <img class="card-img-top" [src]="computador.img"  alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{computador.nome}}</h5>
+        <p class="card-text"><strong>{{computador.valor}}</strong></p>
+        <a class="btn btn-primary" [routerLink]="['/computador', computador.id]">Ver Descrição</a>
+      </div>
+    </div>
