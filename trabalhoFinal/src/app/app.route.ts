@@ -13,7 +13,7 @@ import { MonitoresComponent } from './components/monitores/monitores.component'
 import { HomeComponent } from './components/home/home.component'
 
 export const RotaDinamica: Routes =
-[
+[ 
     { path: 'home', component: HomeComponent},
     { path: 'tvs', component: TvsComponent},
     { path: 'tv/:id', component: TvComponent},
