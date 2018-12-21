@@ -9,37 +9,7 @@ import { Http } from '@angular/http'
 
   }
 
-    public livros: Livro[] =
-[
-  {
-   id: 1,
-   nome: '',
-   descricao: '',
-   valor: '', 
-   img: ''
-  },   
-  {
-    id: 2,
-    nome: '',
-    descricao: '',
-    valor: '', 
-    img: ''  
-  },
-  {
-    id: 3,
-    nome: '',
-    descricao: '',
-    valor: '', 
-    img: ''  
-  },
-  {
-    id: 4,
-    nome: '',
-    descricao: '',
-    valor: '', 
-    img: ''  
-  }
-]
+    public livros: Livro[] = []
 
     public getProdutosPromise(): Promise<Livro[]>{
       return new Promise((resolve, reject) =>{  
@@ -52,7 +22,7 @@ import { Http } from '@angular/http'
       })
     }
 
-    public getProdutosPromiseAPI(): Promise<Livro>{
+    public getProdutosPromiseAPI(): Promise<Livro[]>{
       return this.http.get('http://localhost:3000/livros').toPromise().then((liv:any)=> liv.json())
     }
   

@@ -9,39 +9,8 @@ import { Injectable } from '@angular/core'
 
   }
 
-    public computadores: Computador[] =
-[
-  {
-   id: 1,
-   nome: '',
-   descricao: '',
-   valor: '', 
-   img: ''
-  },   
-  {
-    id: 2,
-    nome: '',
-    descricao: '',
-    valor: '', 
-    img: '' 
-  },
-  {
-    id: 3,
-    nome: '',
-    descricao: '',
-    valor: '', 
-    img: ''  
-  },
-  {
-    id: 4,
-    nome: '',
-    descricao: '',
-    valor: '', 
-    img: ''  
-  }
-]
+    public computadores: Computador[] = []
 
-    
     public getProdutosPromise(): Promise<Computador[]>{
       return new Promise((resolve, reject) =>{  
           let funciona = true
@@ -53,7 +22,7 @@ import { Injectable } from '@angular/core'
       })
     }
 
-    public getProdutosPromiseAPI(): Promise<Computador>{
+    public getProdutosPromiseAPI(): Promise<Computador[]>{
       return this.http.get('http://localhost:3000/computadores').toPromise().then((pc:any)=> pc.json())
     }
   

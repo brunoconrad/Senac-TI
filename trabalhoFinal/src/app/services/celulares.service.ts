@@ -11,39 +11,8 @@ export class CelularesService {
   }
 
 
-    public celulares: Celular[] =
-[
-  {
-   id: 1,
-   nome: '',
-   descricao: '',
-   valor: '',
-   img: ''  
-  },   
-  {
-    id: 2,
-    nome: '',
-    descricao: '',
-    valor: '',
-    img: ''  
-  },
-  {
-    id: 3,
-    nome: '',
-    descricao: '',
-    valor: '',
-    img: ''  
-  },
-  {
-    id: 4,
-    nome: '',
-    descricao: '',
-    valor: '',
-    img: ''  
-  }
-]
+    public celulares: Celular[] = []
 
-    
     public getProdutosPromise(): Promise<Celular[]>{
       return new Promise((resolve, reject) =>{  
         let funciona = true
@@ -55,7 +24,7 @@ export class CelularesService {
       })
     }
 
-    public getProdutosPromiseAPI(): Promise<Celular>{
+    public getProdutosPromiseAPI(): Promise<Celular[]>{
       return this.http.get('http://localhost:3000/celulares').toPromise().then((cel: any) => cel.json())
     }
   

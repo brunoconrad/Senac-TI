@@ -8,37 +8,7 @@ import { Http } from '@angular/http'
 
   }
 
-    public produtos: Tv[] =
-[
-  {
-   id: 1,
-   nome: '',
-   valor: '',
-   descricao: '', 
-   img: ''  
-  },   
-  {
-    id: 2,
-    nome: '',
-    valor: '',
-    descricao: '', 
-    img: ''     
-  },
-  {
-    id: 3,
-    nome: '',
-    valor: '',
-    descricao: '',
-    img: ''    
-  },
-  {
-    id: 4,
-    nome: '',
-    valor: '',
-    descricao: '',
-    img: ''      
-  }
-]
+    public produtos: Tv[] = []
 
     public getProdutosPromise(): Promise<Tv[]>{
       return new Promise((resolve, reject) =>{  
@@ -52,7 +22,7 @@ import { Http } from '@angular/http'
       })
     }
 
-    public getProdutosPromiseAPI(): Promise<Tv>{
+    public getProdutosPromiseAPI(): Promise<Tv[]>{
       return this.http.get('http://localhost:3000/tvs').toPromise().then((prod:any)=> prod.json())
     }
   

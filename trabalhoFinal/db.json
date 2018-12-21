@@ -27,8 +27,7 @@
         "descricao": "Smart TV LED 32 Samsung 32J4290 HD com Conversor Digital 2 HDMI 1 USB Wi-Fi 60Hz - Preta",
         "valor": "R$ 999,99",
         "img": "assets/tvs/tv4.png"
-      },
-    {}
+      }
     ],
     "celulares":[
       {
@@ -58,8 +57,7 @@
         "descricao": "Smartphone Asus Zenfone 5 64GB Dual Chip Android Oreo Tela 6.2 Snapdragon 636 Octacore 4G Câmera 12MP + 8MP (Dual Traseira) 3300mAh - Preto",
         "valor": "R$ 2.199,00",
         "img": "assets/celulares/zenfone5.jpg"
-      },
-    {}
+      }
     ],
     "computadores":[
       {
@@ -89,8 +87,7 @@
         "descricao": "Computador Pichau Gamer RTB, i5-8400, GeForce GTX 1060 6GB Galax OC, 8GB DDR4, HD 1TB, 500w, Rostock RGB",
         "valor": "R$4.319,04",
         "img": "assets/computadores/gamer2.jpg"
-      },
-    {}
+      }
     ],
     "livros":[
       {
@@ -120,8 +117,7 @@
         "descricao": "Esta série foi criada para atender aos eixos tecnológicos que orientamos cursos técnicos e profissionalizantes em âmbito nacional. Seu objetivo é capacitar o aluno para o mercado de trabalho, fornecendo, além de fundamentos teóricos, aspectos práticos que geram uma perspectiva de inserção no setor produtivo e, até mesmo, de requalificação. O conteúdo pode ser estendido a cursos de Formação Inicial e Continuada (FIC), pois o material é agradável e moderno; o aprendizado, gradativo e didático. Está adequado às áreas de conhecimento e aos componentes curriculares – com exemplos e exercícios de fixação – e é proporcional às grades horárias das principais instituições de ensino, portanto o professor pode utilizá-lo como livro-texto em sala de aula. ",
         "valor": "R$ 62,00",
         "img": "assets/livros/webjava.png"
-      },
-    {}
+      }
     ],
     "monitores":[
       {
@@ -151,7 +147,6 @@
         "descricao": "Monitor AOC 23.6 Pol. LED Widescreen Preto, M2470SWD2",
         "valor": "R$723,88",
         "img": "assets/monitores/m4.jpg"
-      },
-    {}
+      }
     ]
   }

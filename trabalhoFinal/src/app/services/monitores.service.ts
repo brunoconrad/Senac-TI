@@ -10,37 +10,7 @@ import { Http } from '@angular/http'
   }
 
 
-    public monitores: Monitor[] =
-[
-  {
-   id: 1,
-   nome: '',
-   descricao: '',
-   valor: '', 
-   img: ''  
-  },   
-  {
-    id: 2,
-    nome: '',
-    descricao: '',
-    valor: '', 
-    img: ''  
-  },
-  {
-    id: 3,
-    nome: '',
-    descricao: '',
-    valor: '', 
-    img: '' 
-  },
-  {
-    id: 4,
-    nome: '',
-    descricao: '',
-    valor: '', 
-    img: ''   
-  }
-]
+    public monitores: Monitor[] = []
 
 public getProdutosPromise(): Promise<Monitor[]>{
   return new Promise((resolve, reject) =>{  
@@ -54,7 +24,7 @@ public getProdutosPromise(): Promise<Monitor[]>{
   })
 }
 
-public getProdutosPromiseAPI(): Promise<Monitor>{
+public getProdutosPromiseAPI(): Promise<Monitor[]>{
   return this.http.get('http://localhost:3000/monitores').toPromise().then((moni:any)=> moni.json())
 }
 
